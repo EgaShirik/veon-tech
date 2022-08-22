@@ -12,7 +12,7 @@ class Footer extends React.Component {
                         <p>УНП 193082231</p>
                     </div>
                     <div class="fc-info">
-                        <h3>КОНТАКТЫ</h3>
+                        <h3 class="contacts">КОНТАКТЫ</h3>
                         <ul>
                             <li><i class="fas fa-phone-alt"></i>  +375 29 717-73-52</li>
                             <li><i class="fas fa-envelope"></i>  sales@veon-tech.by</li>

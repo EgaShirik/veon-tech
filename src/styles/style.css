@@ -1650,7 +1650,9 @@ border: 0;
     width: 100%;
 }
 
+
 .live-review- span {
+    visibility: hidden;
     display: block;
     font-weight: 300;
     margin: 0 0 10px 0;
@@ -1659,6 +1661,7 @@ border: 0;
 }
 
 .live-review- a {
+    visibility: hidden;
     display: inline-block;
     background: #fff;
     padding: 20px;
@@ -1823,6 +1826,10 @@ body .bg-w {
     display: flex;
     color: white;
     text-align: center;
+}
+.contacts{
+    color: white;
+    margin-bottom: 40px;
 }
 
 .footer-ree-lg span.checked {

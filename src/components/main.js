@@ -179,7 +179,7 @@ class Main extends React.Component {
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="sec-heading text-center">
-                                    <h2><span class="ree-text rt40">Технологии</span>с которыми мы работаем</h2>
+                                    <h2><span class="ree-text rt40">Технологии</span> с которыми мы работаем</h2>
                                 </div>
                             </div>
                         </div>
@@ -300,44 +300,32 @@ class Main extends React.Component {
                         <div class = "row zap flx-end">
                             <div class = "col-right-a">
                                 <div class="sec-heading fourc-up-a">
-                                    <span class="sub-heading mb15">Inquiry</span>
-                                    <h2>Let’s Get in<span class="ree-text rt40">Touch</span></h2>
+                                    <span class="sub-heading mb15">Опрос</span>
+                                    <h2>Хотите<span class="ree-text rt40"> Связаться</span></h2>
                                 </div>
                                 <div class="home-contact-block">
                                     <div class = "contact-infos">
                                         <div class="c-infot">
-                                            <span>Sales Department</span>
-                                            <a href="tel:+911234567890">
+                                            <span>Номер</span>
+                                            <a href="tel:+7(995)577-51-63">
                                                 <i class="fas fa-phone-alt"></i>
-                                                +91 123 4567 890
+                                                +7(995)577-51-63
                                             </a>
                                         </div>
-                                        <div class="c-infot">
-                                            <span>HR Department</span>
-                                            <a href="tel:+911234567890">
-                                                <i class="fas fa-phone-alt"></i>
-                                                +91 123 4567 890
-                                            </a>
-                                        </div>
+                                        
                                     </div>
                                     <div class = "contact-infos mt35">
                                         <div class="c-infot">
-                                            <span>Sales Department</span>
-                                            <a href="mailto:reevan@abc.com">
+                                            <span>Email</span>
+                                            <a href="mailto:sales@veon-tech.by">
                                                 <i class="fas fa-envelope"></i>
-                                                reevan@abc.com
+                                                sales@veon-tech.by
                                             </a>
                                         </div>
-                                        <div class="c-infot">
-                                            <span>Connect on Skype</span>
-                                            <a href="skype:reevan.company">
-                                                <i class="fab fa-skype"></i>
-                                                reevan.company
-                                            </a>
-                                        </div>
+                                       
                                     </div>
                                     <div class="live-review- mt60">
-                                        <span>Read Our Customers Feedback</span>
+                                        <span>Отзывы наших клиентов</span>
                                         <div class="livrve">
                                             <a href="#"><img src="images/icons/google-logo.svg"></img></a>
                                             <a href="#"><img src="images/icons/hubspot-logo.svg"></img></a>
@@ -350,54 +338,33 @@ class Main extends React.Component {
                                 <div class="form-contact-hom fourc-up-b">
                                     <div class = "form-block">
                                         <div class = "form-head">
-                                            <h3>Please fill in the form below.</h3>
+                                            <h3>Заполните форму</h3>
                                         </div>
                                         <div class = "form-body">
                                             <form action="#" method="post" name="feedback-form">
                                                 <div class="fieldsets row">
                                                     <div class="col-md-6">
-                                                        <input type="text" placeholder="Full Name" name="name" ></input>
+                                                        <input type="text" placeholder="Полное Имя" name="name" ></input>
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <input type="email" placeholder="Email Address" name="email" ></input>
-                                                    </div>
+                                                    
                                                 </div>
                                                 <div class="fieldsets row">
                                                     <div class="col-md-6">
-                                                        <input type="number" placeholder="Contact Number" name="phone" ></input>
+                                                        <input type="number" placeholder="Номер телефона" name="phone" ></input>
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <input type="text" placeholder="Skype" name="skype" ></input>
-                                                    </div>
+                                                    
                                                 </div>
-                                                <div class="fieldsets row">
-                                                    <div class="col-md-6">
-                                                        <input type="text" placeholder="Subject" name="subject" ></input>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <select>
-                                                            <option>interested in</option>
-                                                            <option>Web Design</option>
-                                                            <option>Graphic Design</option>
-                                                            <option>App Development</option>
-                                                            <option>E-commerce Development</option>
-                                                            <option>Digital Marketing</option>
-                                                            <option>Business Growth</option>
-                                                            <option>Business Startup</option>
-                                                            <option>Other...</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="fieldsets">
-                                                    <textarea placeholder="Message" name = "message"></textarea>
+                                                    <textarea placeholder="Текст сообщения" name = "message"></textarea>
                                                 </div>
-                                                <div class="custom-control custom-checkbox">
+                                                {/* <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" id="customCheck" name="example1" checked="checked"></input>
                                                     <label class="custom-control-label label-f-form" for="customCheck">I agree to the <a href="#">Terms & Conditions</a>of Reevan</label>
-                                                </div>
+                                                </div> */}
                                                 <div class="fieldsets mt20">
                                                     <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 w-100">
-                                                    Send your inquiry 
+                                                    Отправить форму 
                                                         <i class="fas fa-arrow-right fa-btn"></i>
                                                     </button>
                                                 </div>
