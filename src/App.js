@@ -28,7 +28,7 @@ const App = () => {
         <Route path='/request-callback' element={<RequestCallback />} />
         <Route path='/contacts' element={<Contacts />} />
       </Routes>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
