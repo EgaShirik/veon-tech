@@ -5,22 +5,6 @@ class RequestCallback extends React.Component {
     render() {
         return (
             <>
-                <section className="header-title head-dez3 dark-bg pera-block">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-6 vcenter">
-                                <span className="sub-heading mb15"><i className="fas fa-headset mr5"></i>Связаться с нами</span>
-                                <h1>WEB-студия полного цикла</h1>
-                                <p className="h-light">Пожалуйста, заполните форму ниже или напишите нам ваши требования.</p>
-                            </div>
-                            <div className="col-lg-6 vcenter">
-                                <div className="sol-img m-mt30">
-                                    <img src="images/others/smiling-girl.png" alt="img" className="img-fluid" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
                 <div className="contact-form-sec sec-pad r-bg-a">
                     <div className="container">
