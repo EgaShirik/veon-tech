@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
 
 import jQuery from "jquery";
+import PortfolioSlider from "./main/portfolio";
+import ContactUs from "./main/contact-us";
 
 (function ($) {
     //Sticky Header 
@@ -20,6 +23,8 @@ import jQuery from "jquery";
 
 class Main extends React.Component {
     render() {
+        const { portfolio } = this.props;
+
         return (
             <main>
                 <section className="home-hero slide-hero">
@@ -116,177 +121,119 @@ class Main extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section class="r-bg-a sec-pad">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-8 vcenter">
-                                <div class="heading-hz-btn">
-                                    <h2>Наше <span class="ree-tt">Портфолио</span> </h2>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-4 vcenter">
-                                <div class="link-sol-header">
-                                    <a href="portfolio.html" class="ree-card-link">Посмотреть все <i class="fas fa-arrow-right fa-btn"></i></a>
+                <section className="r-bg-x zup sec-pad">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="sec-heading text-center">
+                                    <h2><span className="ree-text rt40">Технологии</span> с которыми мы работаем</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt60">
-                            <div class="col-lg-12">
-                                <div class="full-work-block  owl-carousel">
-                                    <div class="fwb-main-x fwb-a">
-                                        <div class="work-thumbnails">
-                                            <a href="#"><img src="images/portfolio/portfolio-1.jpg" alt="portfolio reevan" class="img-fluid" /> </a>
-                                        </div>
-                                        <div class="work-details">
-                                            <p class="mb10">UX, UI, Graphic Design</p>
-                                            <h4><a href="#"> Creative and minimal clothing label design</a> </h4>
-                                        </div>
-                                    </div>
-                                    <div class="fwb-main-x fwb-a">
-                                        <div class="work-thumbnails">
-                                            <a href="#">	<img src="images/portfolio/portfolio-2.jpg" alt="portfolio reevan" class="img-fluid" /> </a>
-                                        </div>
-                                        <div class="work-details">
-                                            <p class="mb10">UX, UI, Graphic Design</p>
-                                            <h4><a href="#">Creative business card design service </a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="fwb-main-x fwb-a">
-                                        <div class="work-thumbnails">
-                                            <a href="#">	<img src="images/portfolio/portfolio-3.jpg" alt="portfolio reevan" class="img-fluid" /> </a>
-                                        </div>
-                                        <div class="work-details">
-                                            <p class="mb10">UX, UI, Graphic Design</p>
-                                            <h4><a href="#"> Furniture ios app kit design development </a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="fwb-main-x fwb-a">
-                                        <div class="work-thumbnails">
-                                            <a href="#">	<img src="images/portfolio/portfolio-2.jpg" alt="portfolio reevan" class="img-fluid" /> </a>
-                                        </div>
-                                        <div class="work-details">
-                                            <p class="mb10">UX, UI, Graphic Design</p>
-                                            <h4><a href="#"> Furniture ios app kit design development </a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class = "r-bg-x zup sec-pad">
-                    <div class = "container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="sec-heading text-center">
-                                    <h2><span class="ree-text rt40">Технологии</span> с которыми мы работаем</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center mt30">
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                                <div class = "icon-with-title">
+                        <div className="row justify-content-center mt30">
+                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div className="icon-with-title">
                                     <a href="#">
-                                        <div class = "iwt-icon">
+                                        <div className="iwt-icon">
                                             <img src="images/icons/apple.svg" alt="Apple"></img>
                                         </div>
-                                        <div class = "iwt-content">
+                                        <div className="iwt-content">
                                             <p>IOS</p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                            <div class = "icon-with-title">
+                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div className="icon-with-title">
                                     <a href="#">
-                                        <div class = "iwt-icon">
+                                        <div className="iwt-icon">
                                             <img src="images/icons/android.svg" alt="Android"></img>
                                         </div>
-                                        <div class = "iwt-content">
+                                        <div className="iwt-content">
                                             <p>Android</p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                            <div class = "icon-with-title">
+                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div className="icon-with-title">
                                     <a href="#">
-                                        <div class = "iwt-icon">
+                                        <div className="iwt-icon">
                                             <img src="images/icons/flutterio-icon.svg" alt="Flutter"></img>
                                         </div>
-                                        <div class = "iwt-content">
+                                        <div className="iwt-content">
                                             <p>Flutter</p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                            <div class = "icon-with-title">
+                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div className="icon-with-title">
                                     <a href="#">
-                                        <div class = "iwt-icon">
+                                        <div className="iwt-icon">
                                             <img src="images/icons/java.svg" alt="JAVA"></img>
                                         </div>
-                                        <div class = "iwt-content">
+                                        <div className="iwt-content">
                                             <p>JAVA</p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                            <div class = "icon-with-title">
+                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div className="icon-with-title">
                                     <a href="#">
-                                        <div class = "iwt-icon">
+                                        <div className="iwt-icon">
                                             <img src="images/icons/physics.svg" alt="React Native"></img>
                                         </div>
-                                        <div class = "iwt-content">
+                                        <div className="iwt-content">
                                             <p>React Native</p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                            <div class = "icon-with-title">
+                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div className="icon-with-title">
                                     <a href="#">
-                                        <div class = "iwt-icon">
+                                        <div className="iwt-icon">
                                             <img src="images/icons/apple.svg" alt="Apple"></img>
                                         </div>
-                                        <div class = "iwt-content">
+                                        <div className="iwt-content">
                                             <p>Python</p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                            <div class = "icon-with-title">
+                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div className="icon-with-title">
                                     <a href="#">
-                                        <div class = "iwt-icon">
+                                        <div className="iwt-icon">
                                             <img src="images/icons/java.svg" alt="JAVA"></img>
                                         </div>
-                                        <div class = "iwt-content">
+                                        <div className="iwt-content">
                                             <p>JAVA</p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                            <div class = "icon-with-title">
+                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div className="icon-with-title">
                                     <a href="#">
-                                        <div class = "iwt-icon">
+                                        <div className="iwt-icon">
                                             <img src="images/icons/swift.svg" alt="Swift"></img>
                                         </div>
-                                        <div class = "iwt-content">
+                                        <div className="iwt-content">
                                             <p>Swift</p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                            <div class = "icon-with-title">
+                            <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div className="icon-with-title">
                                     <a href="#">
-                                        <div class = "iwt-icon">
+                                        <div className="iwt-icon">
                                             <img src="images/icons/pwa.svg" alt="PWA"></img>
                                         </div>
-                                        <div class = "iwt-content">
+                                        <div className="iwt-content">
                                             <p>PWA</p>
                                         </div>
                                     </a>
@@ -295,92 +242,29 @@ class Main extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section class="home-contact pb120"  /* data-background="images/others/office.jpg" */ /* style={"background-image: url(images/others/office.jpg);"} */ /* style="background-image: url(images/others/office.jpg);" */>
-                    <div class = "container">
-                        <div class = "row zap flx-end">
-                            <div class = "col-right-a">
-                                <div class="sec-heading fourc-up-a">
-                                    <span class="sub-heading mb15">Опрос</span>
-                                    <h2>Хотите<span class="ree-text rt40"> Связаться</span></h2>
-                                </div>
-                                <div class="home-contact-block">
-                                    <div class = "contact-infos">
-                                        <div class="c-infot">
-                                            <span>Номер</span>
-                                            <a href="tel:+7(995)577-51-63">
-                                                <i class="fas fa-phone-alt"></i>
-                                                +7(995)577-51-63
-                                            </a>
-                                        </div>
-                                        
+                <PortfolioSlider portfolio={portfolio} />
+                <ContactUs />
+                <div className="location-home sec-pad">
+                    <div className="container">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-4">
+                                <div className="location-block- mt60">
+                                    <div className="loc-icon-nam">
+                                        <img src="/images/icons/minsk-belarus.jpg" alt="minsk-belarus" />
+                                        <p><span className="ree-text rt40">Республика Беларусь</span></p>
                                     </div>
-                                    <div class = "contact-infos mt35">
-                                        <div class="c-infot">
-                                            <span>Email</span>
-                                            <a href="mailto:sales@veon-tech.by">
-                                                <i class="fas fa-envelope"></i>
-                                                sales@veon-tech.by
-                                            </a>
-                                        </div>
-                                       
-                                    </div>
-                                    <div class="live-review- mt60">
-                                        <span>Отзывы наших клиентов</span>
-                                        <div class="livrve">
-                                            <a href="#"><img src="images/icons/google-logo.svg"></img></a>
-                                            <a href="#"><img src="images/icons/hubspot-logo.svg"></img></a>
-                                            <a href="#"><img src="images/icons/trustpilot-logo.svg"></img></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class = "col-right-b">
-                                <div class="form-contact-hom fourc-up-b">
-                                    <div class = "form-block">
-                                        <div class = "form-head">
-                                            <h3>Заполните форму</h3>
-                                        </div>
-                                        <div class = "form-body">
-                                            <form action="#" method="post" name="feedback-form">
-                                                <div class="fieldsets row">
-                                                    <div class="col-md-6">
-                                                        <input type="text" placeholder="Полное Имя" name="name" ></input>
-                                                    </div>
-                                                    
-                                                </div>
-                                                <div class="fieldsets row">
-                                                    <div class="col-md-6">
-                                                        <input type="number" placeholder="Номер телефона" name="phone" ></input>
-                                                    </div>
-                                                    
-                                                </div>
-                                                
-                                                <div class="fieldsets">
-                                                    <textarea placeholder="Текст сообщения" name = "message"></textarea>
-                                                </div>
-                                                {/* <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1" checked="checked"></input>
-                                                    <label class="custom-control-label label-f-form" for="customCheck">I agree to the <a href="#">Terms & Conditions</a>of Reevan</label>
-                                                </div> */}
-                                                <div class="fieldsets mt20">
-                                                    <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 w-100">
-                                                    Отправить форму 
-                                                        <i class="fas fa-arrow-right fa-btn"></i>
-                                                    </button>
-                                                </div>
-                                                <p class = "trm">
-                                                    <i class="fas fa-lock"></i>
-                                                    We hate spam, and we respect your privacy.
-                                                </p>
-                                            </form>
-                                        </div>
+                                    <p className="pt20 pb20">220068, г. Минск, ул. Орловская, 40а, офис 40-1</p>
+                                    <div className="loc-contct">
+                                        <a href="https://yandex.by/maps/157/minsk/house/Zk4YcwJlSUEOQFtpfXVyc3prZQ==/?ll=27.555048%2C53.932681&z=16.81" target="blank" className="btn-outline rount-btn" title="Map Location"><i className="fas fa-map-marker-alt"></i></a>
+                                        <a href="tel:+7(995)577-51-63" className="btn-outline rount-btn" title="Phone Number"><i className="fas fa-phone-alt"></i></a>
+                                        <a href="mailto:sales@veon-tech.by" className="btn-outline rount-btn" title="Email Address"><i className="fas fa-envelope"></i></a>
+                                        <a href="" target="blank" className="btn-outline rount-btn" title="Skype Id"><i className="fab fa-skype"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                
+                </div>
             </main>
         )
     }

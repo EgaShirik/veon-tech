@@ -1,0 +1,176 @@
+.main__portfolio {
+    background: #452650;
+    text-align: center;
+    padding: 120px 0;
+    margin-bottom: 240px;
+}
+
+.portfolio__footer {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.img-fluid {
+    height: 276px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slick-track {
+    left: 300px;
+}
+
+.slick-slide {
+    margin-right: 20px;
+    text-align: left;
+    max-width: 411px;
+}
+
+.slick-arrow {
+    width: 40px;
+    height: 50px;
+    background: #ffffff !important;
+    border-radius: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff5b2e !important;
+    z-index: 10;
+    box-shadow: 0 0 4px 1px rgb(0 0 0 / 40%);
+}
+
+.slick-next {
+    right: 30px;
+}
+
+.slick-prev {
+    left: 30px;
+}
+
+.slick-arrow::before {
+    content: '';
+    display: inline-block;
+    background: url('../../public/images/portfolio/arrow-slider-icon.svg') no-repeat center;
+    width: 40px;
+    height: 50px;
+}
+
+.slick-next::before {
+    transform: rotate(180deg);
+}
+
+.portfolio__title {
+    flex-direction: column;
+}
+
+.title_text {
+    max-width: 100%;
+    text-align: center;
+}
+
+.porfolio-toggle__wrapper {
+    display: flex;
+    flex: none;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.porfolio-toggle__wrapper .toggle {
+    text-transform: capitalize;
+    display: block;
+    min-width: 235px;
+}
+
+.porfolio-toggle__wrapper .active {
+    background: #ff5b2e;
+    color: #fff;
+}
+
+.port-ref-link {
+    width: max-content;
+    float: none;
+    margin-top: 0;
+    height: 50px;
+    align-items: center;
+}   
+
+.col-lg-5 {
+    flex: none;
+}
+
+.portfolio-page__title {
+    padding: 130px 0 50px;
+}
+
+.portfolio-page__main {
+    padding: 80px 0;
+}
+
+.portfolio__card {
+    height: max-content;
+    max-width: 25%;
+}
+
+.work-details {
+    position: relative;
+}
+
+.work-details__footer {
+    position: absolute;
+    z-index: 10;
+    max-height: 0;
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+    transition: max-height 1s;
+}
+
+.work-details .visible {
+    max-height: 300px;
+    padding-bottom: 30px;
+    border-radius: 0 0 14px 14px;
+}
+
+.work-details p {
+    font-weight: 600;
+}
+
+.work-details span {
+    font-weight: 400;
+}
+
+.contact-us__wrapper {
+    background: url('../../public/images/banner/office.jpg') no-repeat center;
+    z-index: 1;
+}
+
+.contact-us__wrapper .container {
+    z-index: 2;
+}
+
+.home-contact-block {
+    display: flex;
+    align-items: center;
+}
+
+.c-infot {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.fieldsets {
+    width: 100%;
+    margin: 0;
+}
+
+.fieldsets input {
+    width: 100%;
+}
+
+.footer-a {
+    background: #30303c;
+}
