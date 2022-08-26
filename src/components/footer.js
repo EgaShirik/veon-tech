@@ -46,30 +46,6 @@ class Footer extends React.Component {
                     </div>
                 </div>
             </footer>
-            // <footer className="footer-a">
-            //     <div className="f-container">
-            //         <div className="fc-icon">
-            //             <img className="f-img" src="images/icons/logo-veon-tech.png"></img>
-            //             <p className="veon-consalt">ООО "Веон-консалт"</p>
-            //             <p>УНП 193082231</p>
-            //         </div>
-            //         <div className="fc-info">
-            //             <h3 className="contacts">КОНТАКТЫ</h3>
-            //             <ul>
-            //                 <li><i className="fas fa-phone-alt"></i>  +375 29 717-73-52</li>
-            //                 <li><i className="fas fa-envelope"></i>  sales@veon-tech.by</li>
-            //                 <li><i  className="fas fa-map-marker-alt" ></i>  220068, г. Минск, ул. Орловская, 40а, офис 40-1</li>
-            //                 <li><i className="far fa-calendar-alt"></i>  С понедельника по пятницу​</li>
-            //             </ul>
-            //         </div>
-            //     </div>
-            //     <hr></hr>
-            //     <div className="copyright">
-            //         <p className="copyright-first">Copyright 2020 All rights reserved</p>
-            //         <p className="copyright-second">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
-            //     </div>
-
-            // </footer>
         )
     }
 }
