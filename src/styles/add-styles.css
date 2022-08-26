@@ -13,9 +13,18 @@
 }
 
 .img-fluid {
-    height: 276px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
+}
+
+.bhv-tt .creative-img {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.ree-card {
+    padding: 20px 10px;
 }
 
 .slick-track {
@@ -126,7 +135,7 @@
     width: 100%;
     left: 0;
     padding: 0 20px;
-    transition: max-height 1s;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .work-details .visible {
@@ -171,6 +180,60 @@
     width: 100%;
 }
 
+.location-home {
+    background: url('../../public/images/banner/minsk-background.png') no-repeat center;
+    background-size: contain;
+    position: relative;
+}
+
+.location-home::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+}
+
 .footer-a {
     background: #30303c;
+    height: max-content;
+    max-width: 100%;
+}
+
+.footer-fist-row {
+    max-width: 2540px;
+    margin: auto;
+}
+
+.footer-ree-c {
+    border-bottom: 1px solid #353544;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.footer-links-list li {
+    margin-right: 30px;
+}
+
+.footer-links-list a {
+    display: flex;
+    width: 160px;
+}
+
+.footer_contact-info {
+    padding-top: 0 !important;
+}
+
+.row {
+    flex-wrap: nowrap;
 }

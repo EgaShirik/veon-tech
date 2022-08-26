@@ -33,7 +33,6 @@ const PortfolioPage = ({ portfolio }) => {
 
     const handleOnMouseEnterCard = e => {
         const { id } = e.target.dataset;
-
         const mouseEnterPorfolioCard = portfolioArray.map(item => (
             item.selected ?
                 {
@@ -101,11 +100,11 @@ const PortfolioPage = ({ portfolio }) => {
                                         onMouseLeave={handleOnMouseLeaveCard}
                                         key={i}
                                     >
-                                        <div className="fwb-main-x fwb-a">
-                                            <div className="work-thumbnails">
-                                                <img src={card.img} alt="portfolio reevan" className="img-fluid" />
+                                        <div className="fwb-main-x fwb-a"  data-id={card.id}>
+                                            <div className="work-thumbnails" data-id={card.id}>
+                                                <img src={card.img} alt="portfolio reevan" className="img-fluid"  data-id={card.id} />
                                             </div>
-                                            <div class="work-details">
+                                            <div className="work-details" data-id={card.id}>
                                                 <h4>{card.title}</h4>
                                                 <div className={`work-details__footer ${card.selected ? 'visible' : ''}`}>
                                                     <p>Тип сайта: <span>{card.type}</span></p>
