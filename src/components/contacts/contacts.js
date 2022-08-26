@@ -11,10 +11,10 @@ class Contacts extends React.Component{
                             <div class="page-headings">
                                 <span class="sub-heading mb15">
                                     <i class="fas fa-headset mr5"></i>
-                                    Let's Talk
+                                    Давайте свяжемся
                                 </span>
-                                <h1 class="mb15">Good talks make good projects</h1>
-                                <p>We would be happy to hear from you, Please fill in the form below or mail us your requirements.</p>
+                                <h1 class="mb15">Хорошие разговоры делают хорошие проекты</h1>
+                                <p>Мы будем рады связаться с вами, пожалуйста, заполните форму ниже или напишите нам ваши требования.</p>
                             </div>
                         </div>
                         <div class="col-lg-7 vcenter">
@@ -26,9 +26,9 @@ class Contacts extends React.Component{
                                                 <i class="fas fa-phone-alt"></i>
                                             </div>
                                             <div class="ree-details-set dtb-details">
-                                                <span>Salse Department</span>
-                                                <a href="tel:+911234567890">+911234567890</a>
-                                                <a href="tel:+911234567890">+911234567890</a>
+                                                <span>Номер</span>
+                                                <a href="tel:+7(995)577-51-63">+7(995)577-51-63</a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -37,12 +37,15 @@ class Contacts extends React.Component{
                                     <div class="contact-details-block">
                                         <div class="ree-row-set">
                                             <div class="ree-icon-set dtb-icon">
-                                                <i class="fas fa-phone-alt"></i>
+                                            <i class="fas fa-map-marker-alt"></i>
                                             </div>
                                             <div class="ree-details-set dtb-details">
-                                                <span>HR Department</span>
-                                                <a href="tel:+911234567890">+911234567890</a>
-                                                <a href="tel:+911234567890">+911234567890</a>
+                                                <span>Адрес</span>
+                                                <a href="#">
+                                                    
+                                                    Орловская улица, 40А Минск, Беларусь
+                                                </a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -56,13 +59,13 @@ class Contacts extends React.Component{
                                                 <i class="fas fa-envelope"></i>
                                             </div>
                                             <div class="ree-details-set dtb-details">
-                                                <span>Sales Department</span>
-                                                <a href="mailto:salse@example.com">salse@example.com</a>
+                                                <span>Email</span>
+                                                <a href="mailto:sales@veon-tech.by">sales@veon-tech.by</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 m-mt30">
+                                {/* <div class="col-lg-6 m-mt30">
                                     <div class="contact-details-block">
                                         <div class="ree-row-set">
                                             <div class="ree-icon-set dtb-icon">
@@ -74,7 +77,7 @@ class Contacts extends React.Component{
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
