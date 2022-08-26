@@ -2,13 +2,12 @@ import { useState, useEffect } from 'react';
 import Header from './components/header';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
-import Main from './components/main';
-import RequestCallback from './components/contacts/request-callback';
-import Footer from './components/footer';
-import PortfolioPage from './components/portfolio-page';
+import Main from "./components/main";
+import RequestCallback from "./components/contacts/request-callback";
+import Footer from "./components/footer";
 
-const App = ({ store }) => {
-  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
+const App = () => {
+
   const location = useLocation();
 
   let resizeWindow = () => {
@@ -27,6 +26,7 @@ const App = ({ store }) => {
         <Route path='/' element={<Main portfolio={store.portfolio} />} />
         <Route path='/portfolio' element={<PortfolioPage portfolio={store.portfolio} />} />
         <Route path='/request-callback' element={<RequestCallback />} />
+        <Route path='/contacts' element={<Contacts />} />
       </Routes>
       <Footer />
     </>

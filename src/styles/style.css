@@ -1571,6 +1571,9 @@ border: 0;
     color: #fff;
     padding-top: 155px;
 }
+#contacts{
+    height: 1100px;
+}
 
 .review-text p::before {
     font-family: 'Font Awesome 5 Free';
