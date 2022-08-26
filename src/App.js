@@ -28,7 +28,7 @@ const App = ({ store }) => {
         <Route path='/portfolio' element={<PortfolioPage portfolio={store.portfolio} />} />
         <Route path='/request-callback' element={<RequestCallback />} />
       </Routes>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
