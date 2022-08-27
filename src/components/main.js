@@ -1,13 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Slider from "react-slick";
 
 import jQuery from "jquery";
 import PortfolioSlider from "./main/portfolio";
 import ContactUs from "./main/contact-us";
 
 (function ($) {
-    //Sticky Header 
     function updateScroll() {
         if ($(window).scrollTop() >= 80) {
             $(".ree-header").addClass('sticky');

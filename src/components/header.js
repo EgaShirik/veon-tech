@@ -1,15 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import RequestCallback from "./header/request-callback";
 
 class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            stateRequestPopUp: false
+        }
+    }
+
+    handleClickRequest = () => {
+        const { stateRequestPopUp } = this.state;
+
+        this.setState({ stateRequestPopUp: !stateRequestPopUp })
+    }
+
     render() {
+        const { stateRequestPopUp } = this.state;
         const { location } = this.props;
+
         return (
-            <header className={`${location.pathname.includes('request') ? 'header-dark' : 'header-bhv'} ree-header fixed-top`}>
+            <header className={`header-bhv ree-header fixed-top ${stateRequestPopUp ? 'pop-up-open' : ''}`}>
                 <div className="container-fluid m-p-l-r-0">
                     <div className="menu-header">
                         <div className="menu-logo">
-                            <div className="dskt-logo"><Link className="nav-brand" to="/"><img src={ location.pathname.includes('request') ? 'images/white-logo.png' : 'images/dark-logo.png'} alt="Logo" className="ree-logo" /> </Link> </div>
+                            <div className="dskt-logo"><Link className="nav-brand" to="/"><img src={location.pathname.includes('request') ? 'images/white-logo.png' : 'images/dark-logo.png'} alt="Logo" className="ree-logo" /> </Link> </div>
                         </div>
                         <div className="ree-nav" role="navigation">
                             <ul className="nav-list">
@@ -38,11 +54,9 @@ class Header extends React.Component {
                             </ul>
                         </div>
                         <div className="ree-nav-cta">
-                            <ul>
-                                <li><Link to='/request-callback' className="ree-btn ree-btn0 ree-btn-grdt2">Заказать звонок</Link> </li>
-                            </ul>
+                            <button className="ree-btn ree-btn0 ree-btn-grdt2" onClick={this.handleClickRequest}>Заказать звонок</button>
                         </div>
-                        
+                        {stateRequestPopUp && <RequestCallback handleClickRequest={this.handleClickRequest} />}
                     </div>
                 </div>
             </header>
